@@ -4,6 +4,9 @@ import numpy as np
 import cv2
 from ultralytics import YOLO
 
+import torch
+torch.classes.__path__ = []
+
 # Page configuration
 st.set_page_config(
     page_title="Bhutan Wildlife Guardian - AI Species Detection",
