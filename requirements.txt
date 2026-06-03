@@ -1,7 +1,7 @@
 streamlit
 pillow
 numpy
-opencv-python
+opencv-python-headless
 ultralytics
 folium
 streamlit-folium
