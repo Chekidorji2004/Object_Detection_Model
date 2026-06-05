@@ -479,20 +479,20 @@ st.markdown("""
 # About Section
 st.markdown("""
 <div class='about-section'>
-    <h3>🎯 About This Platform</h3>
+    <h3>About This Platform</h3>
     <p>The Bhutan Wildlife Guardian is an AI-powered conservation tool designed to help identify and protect Bhutan's most iconic wildlife species. Using state-of-the-art YOLOv11 deep learning technology, this platform can:</p>
     <ul>
-        <li>🔍 <b>Detect 7 Key Species:</b> Red Panda, Snow Leopard, Bengal Tiger, Asian Elephant, Takin, Clouded Leopard, and Black Musk Deer</li>
-        <li>📊 <b>Provide Conservation Information:</b> Learn about species status, threats, and how you can help</li>
-        <li>🌿 <b>Support Conservation:</b> Educational content to promote wildlife protection</li>
+        <li><b>Detect 7 Key Species:</b> Red Panda, Snow Leopard, Bengal Tiger, Asian Elephant, Takin, Clouded Leopard, and Black Musk Deer</li>
+        <li><b>Provide Conservation Information:</b> Learn about species status, threats, and how you can help</li>
+        <li><b>Support Conservation:</b> Educational content to promote wildlife protection</li>
     </ul>
-    <p><i>⚡ Note: Detection requires 80%+ confidence for accurate identification. Upload clear, well-lit images for best results!</i></p>
+    <p><i>Note: Detection requires 80%+ confidence for accurate identification. Upload clear, well-lit images for best results!</i></p>
 </div>
 """, unsafe_allow_html=True)
 
 # Species Grid Section
 st.markdown("---")
-st.subheader("🐾 Our Target Species")
+st.subheader("Our Target Species")
 
 # Create responsive species grid with 4 cards per row
 cols = st.columns(4)
@@ -513,7 +513,7 @@ for idx, species in enumerate(SPECIES_LIST):
 
 # Image Upload Section
 st.markdown("---")
-st.subheader("📸 Species Detection")
+st.subheader("Species Detection")
 
 # Initialize session state for input method
 if 'input_method' not in st.session_state:
@@ -627,16 +627,16 @@ if current_image is not None:
                     
                     # Species Information
                     st.markdown("---")
-                    st.subheader(f"📚 About {species_name}")
+                    st.subheader(f"About {species_name}")
                     
                     col1, col2 = st.columns(2)
                     
                     with col1:
                         st.markdown(f"""
                         <div class='info-card'>
-                            <h4>📖 Description</h4>
+                            <h4>Description</h4>
                             <p>{data['description']}</p>
-                            <h4>⭐ Fun Fact</h4>
+                            <h4>Fun Fact</h4>
                             <p>{data['fun_fact']}</p>
                         </div>
                         """, unsafe_allow_html=True)
@@ -644,7 +644,7 @@ if current_image is not None:
                     with col2:
                         st.markdown(f"""
                         <div class='info-card'>
-                            <h4>⚠️ Major Threats</h4>
+                            <h4>Major Threats</h4>
                         """, unsafe_allow_html=True)
                         for threat in data['threats']:
                             st.markdown(f"<div class='threat-item'>• {threat}</div>", unsafe_allow_html=True)
@@ -656,7 +656,7 @@ if current_image is not None:
                     # Conservation Actions
                     st.markdown("""
                     <div class='info-card'>
-                        <h4>💚 How You Can Help</h4>
+                        <h4>How You Can Help</h4>
                     """, unsafe_allow_html=True)
                     for action in data['actions']:
                         st.markdown(f"<div class='action-item'>✅ {action}</div>", unsafe_allow_html=True)
@@ -664,13 +664,13 @@ if current_image is not None:
                     
                     # Protected areas
                     st.markdown("---")
-                    st.subheader(f"🏞️ Protected Areas Hosting {species_name}")
+                    st.subheader(f"Protected Areas Hosting {species_name}")
                     for pa in data['protected_areas']:
                         st.success(f"📍 {pa}")
                     
                     # Reset button
                     st.markdown("---")
-                    if st.button("🔄 Detect Another Image", use_container_width=True):
+                    if st.button("Detect Another Image", use_container_width=True):
                         st.session_state.input_method = None
                         st.session_state.uploaded_image = None
                         st.session_state.camera_image = None
