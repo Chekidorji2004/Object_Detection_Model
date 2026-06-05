@@ -733,6 +733,6 @@ st.markdown("""
 <div style='text-align: center; padding: 2rem; background: linear-gradient(135deg, #2c3e50 0%, #27ae60 100%); border-radius: 15px; color: white; margin-top: 2rem;'>
     <h4>🌿 Protecting Bhutan's Wildlife for Future Generations</h4>
     <p>Powered by YOLOv11 | AI for Conservation | Bhutan Wildlife Guardian</p>
-    <p style='font-size: 0.8rem; opacity: 0.9;'>© 2024 - Supporting Bhutan's Conservation Efforts</p>
+    <p style='font-size: 0.8rem; opacity: 0.9;'>© 2026 - Supporting Bhutan's Conservation Efforts</p>
 </div>
 """, unsafe_allow_html=True)
