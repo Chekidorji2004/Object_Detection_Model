@@ -1,10 +1,7 @@
---extra-index-url https://pypi.org/simple
---no-cache-dir
-
-streamlit==1.38.0
-pillow==10.4.0
-numpy==1.26.4
-opencv-python-headless==4.10.0.84
-ultralytics==8.2.50
-folium==0.17.0
-streamlit-folium==0.21.0
+streamlit
+pillow
+numpy
+opencv-python-headless
+ultralytics
+folium
+streamlit-folium
