@@ -1,3 +1,6 @@
+--extra-index-url https://pypi.org/simple
+--no-cache-dir
+
 streamlit==1.38.0
 pillow==10.4.0
 numpy==1.26.4
